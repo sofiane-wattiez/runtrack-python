@@ -12,10 +12,10 @@ class Can(Canvas):
         
             #Variables
         
-        self.cases      = [] # Cases d�j� remplies
+        self.cases      = [] # Cases déjà remplies
         self.listerouge = [] # Liste des cases rouges
         self.listejaune = [] # Liste des cases jaunes
-        self.dgagnantes = [] # Cases d�j� gagnantes et donc ne peuvent plus l"�tre � nouveau (cf "Continuer")
+        self.dgagnantes = [] # Cases déjà gagnantes et donc ne peuvent plus l"�tre � nouveau (cf "Continuer")
         self.running    = 1  # Type de partie en cours
         self.couleur    = ["Rouges", "Jaunes"]
         self.color      = ["red", "#EDEF3A"]
