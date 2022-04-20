@@ -13,5 +13,5 @@ class Personne:
         return p
 print(Personne.SePresenter())
 # p=SePresenter() # Appel de la fonction
-p1=Personne.SePresenter("Bonjour je m'appelle " .  Personne.nom , Personne.prenom) # Appel de la fonction
+p1=Personne.SePresenter() # Appel de la fonction
 print(Personne.SePresenter(p1))
