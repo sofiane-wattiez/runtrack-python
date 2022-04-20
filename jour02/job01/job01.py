@@ -24,6 +24,8 @@ class Livre(Auteur):
         self.nbpages = nbpages
     def __str__(self):
         return "Le livre {} de {} a {} pages".format(self.titre, self.auteur, self.nbpages)
-    def __repr__(self):
-        return "Livre({}, {}, {})".format(self.titre, self.auteur, self.nbpages)
+    def ecrireUnLivre(titre , auteur , nbpages):
+        return "Le livre {} de {} a {} pages".format(titre, auteur, nbpages)
+# def __repr__(self):
+    #     return "Livre({}, {}, {})".format(self.titre, self.auteur, self.nbpages)
 print("Le livre {} de {} a {} pages".format(Livre.titre, Livre.auteur, Livre.nbpages))

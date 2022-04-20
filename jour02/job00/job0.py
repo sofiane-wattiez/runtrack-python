@@ -13,10 +13,8 @@ class Personne:
     # def __del__(self): 
     #     print("je suis le destructeur")
     def SePresenter(nom, prenom):
-        nom = 'test'
-        prenom = 'test'
         print("Bonjour, je m'appelle {} {}".format(nom, prenom))
-        p=Personne(nom='Wattiez', prenom='Sofiane') # Instanciation
+        p=Personne('Wattiez', 'Sofiane') # Instanciation
         # p1=Personne('nom', 'prenom') # Instanciation
         print('fin de création')
         return p
