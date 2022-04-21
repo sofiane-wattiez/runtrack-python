@@ -1,0 +1,1 @@
+votre nombre :", Puissance(nombreEntier))
