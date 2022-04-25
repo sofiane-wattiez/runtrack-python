@@ -1,22 +1,21 @@
-##########################################################################
-import argparse
-from xml.dom.minidom import parse, parseString
+import xml.etree.ElementTree as ET # pour parser le fichier XML
 
-# rss_content=parse("domain.xml")
+tree = ET.parse('domain.xml') # on ouvre le fichier XML
+root = tree.getroot() # on récupère la racine du fichier XML
 
 
-# def Reading():
-#     read = open("output.txt" , "r")
-#     print(read.read())
-#     read.close()
-# print()
+# tree = ET.parse('domain.xml') # on ouvre le fichier XML
 
-def GetDomain():
-    doc = parse("domain.xml")
-    domaine = doc.getElementsByTagName("domain")
-    # print(doc.read())
-    # doc.close()
-print(GetDomain())
+root.tag # on récupère le nom de la racine
+root.attrib # on récupère les attributs de la racine
+
+
+
+# for domain in root.findall('domain'):
     
-# print( "Il y a " , len(doc) , "de balise domaine dans le fichier XML.") ## imprime le nb de balise "domaine" trouvés
-# print()
+#     name = domain.find('name').text
+#     ext = domain.get('.com' , 'org' 'net')
+#     print(name, ext)
+
+for child in root: # on parcourt les enfants de la racine
+    print(child.tag, child.attrib) # on affiche le nom de l'enfant et ses attributs
